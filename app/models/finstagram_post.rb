@@ -5,6 +5,7 @@ class FinstagramPost < ActiveRecord::Base
     has_many :likes
 
     validates_presence_of :user
+    validates :photo_url, :user, presence: true
 
 #class methods
 
